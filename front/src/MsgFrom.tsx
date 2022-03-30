@@ -62,11 +62,12 @@ export default function SignupCard() {
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
           <Heading fontSize={"4xl"} textAlign={"center"}>
-            심심한 규현이에게 인편을 써주세요 ㅎㅎ
+            심심한 규현이에게 인편을 써주세요 🥰🥰
           </Heading>
           <Alert fontSize={"md"} textAlign={"center"} color={"red.500"}>
-            규현이가 손편지로 답장을 하려면 답장을 받으려는 여러분의 주소,
-            우편번호, 전화번호를 편지에 적으셔야해요!
+            규현이가 손편지로 답장을 보내려면, 여러분의 주소, 우편번호,
+            전화번호를 편지에 첨부하셔야해요! (참고로 메세지들은 전부 제가 조회
+            가능합니다! 민감한 정보는 빼주세요 ㅎㅎ)
           </Alert>
         </Stack>
         <Box
@@ -90,13 +91,13 @@ export default function SignupCard() {
                 </Box>
                 <Box>
                   <FormControl isRequired>
-                    <FormLabel>편지 받을 우편번호와 주소.</FormLabel>
+                    <FormLabel>우편번호와 주소</FormLabel>
                     <Input
                       id="address"
                       type="text"
                       {...register("address", {
                         required: true,
-                        maxLength: 50,
+                        maxLength: 100,
                       })}
                     />
                   </FormControl>
